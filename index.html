@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Travelogue</title>
+<!-- 
+Journey Template 
+http://www.templatemo.com/tm-511-journey
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+      </head>
+
+      <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>    
+            <div class="tm-top-bar" id="tm-top-bar">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo.png" alt="Site logo">
+                                Travelogue
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-2">Top Destinations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-3">Recommended Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>                            
+                    </nav>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h1 class="text-uppercase tm-banner-title">Let's begin</h1>
+                                    <img src="img/dots-3.png" alt="Dots">
+                                    <p class="tm-banner-subtitle">We assist you to choose the best.</p>
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">                                    
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputRoom">How many rooms?</label>
+                                            <select name="room" class="form-control tm-select" id="inputRoom">
+                                                <option value="1" selected>1 Room</option>
+                                                <option value="2">2 Rooms</option>
+                                                <option value="3">3 Rooms</option>
+                                                <option value="4">4 Rooms</option>
+                                                <option value="5">5 Rooms</option>
+                                                <option value="6">6 Rooms</option>
+                                                <option value="7">7 Rooms</option>
+                                                <option value="8">8 Rooms</option>
+                                                <option value="9">9 Rooms</option>
+                                                <option value="10">10 Rooms</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                            <label for="inputAdult">Adult</label>     
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="inputChildren">Children</label>                                            
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	<option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>                                        
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row">
+
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckIn">Check In Date</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckOut">Check Out Date</label>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="btnSubmit">&nbsp;</label>
+                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+                                    </div>
+                                </div>                              
+                            </form>                             
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+            <section class="p-5 tm-container-outer tm-bg-gray">            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
+                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
+                            <p class="mb-4">“What is that feeling when you're driving away from people and they recede on the plain till you see their specks dispersing? - it's the too-huge world vaulting us, and it's good-bye. But we lean forward to the next crazy venture beneath the skies.” 
+― Jack Kerouac, On the Road</p>
+                                                         
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            
+            <div class="tm-container-outer" id="tm-section-2">
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/goaf.jpg" alt="Image">
+                        <img src="img/goa2.jpg" alt="Image">
+                        <img src="img/goa3.jpg" alt="Image">    
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Goa's most visited places</h2>
+                        <p>REJUVNATE ON THE LUXE BEACHES OF THE ARABIAN SEA</p>
+                        <a href="new.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/sikkim.jpg" alt="Image">
+                        <img src="img/sikkim2.jpg" alt="Image">
+                        <img src="img/sikkim3.jpg" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">Sikkim"s most popular places</h2>
+                        <p>SEEK SOLITUDE IN THE BUDDHIST MONASTRIES OF THE EAST</p>
+                        <a href="sikkim.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                    </div>                        
+
+               </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/kerala.jpg" alt="Image">
+                        <img src="img/kerala2.jpg" alt="Image">
+                        <img src="img/kerala3.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Kerala's most famous places</h2>
+                        <p>REWIND AND RELAX IN THE BACKWATERS OF KERALA</p>
+                        <a href="kerala.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+				<section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/agra.jpg" alt="Image">
+                        <img src="img/agra2.jpg" alt="Image">
+                        <img src="img/agra3.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Agra's most famous places</h2>
+                        <p>WITNESS THE EPITOME OF LOVE - THE TAJ MAHAL</p>
+                        <a href="agra.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+				<section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/udaipur.jpg" alt="Image">
+                        <img src="img/udaipur2.jpg" alt="Image">
+                        <img src="img/udaipur3.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Udaipur's most famous places</h2>
+                        <p>EXPERIENCE THE ROYAL GRANDEUR IN THE LAKE CITY</p>
+                        <a href="udai.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+				<section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/manali.jpg" alt="Image">
+                        <img src="img/manali2.jpg" alt="Image">
+                        <img src="img/manali3.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Manali's most famous places</h2>
+                        <p>NESTLED IN BETWEEN THE SNOW-CAPPED SLOPES OF THE PIR PANJAL AND THE DHAULADHAR RANGES</p>
+                        <a href="manali.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+				<section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/pondi.jpg" alt="Image">
+                        <img src="img/pondi2.jpg" alt="Image">
+                        <img src="img/pondi3.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Pondicherry's most famous places</h2>
+                        <p>A LOVE CHILD OF FRENCH AND INDIAN HISTORY.</p>
+                        <a href="pondi.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+				
+				
+				
+            </div>        
+            <div class="tm-container-outer" id="tm-section-3">
+                <ul class="nav nav-pills tm-tabs-links">
+                    <li class="tm-tab-link-li">
+                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                            
+                            GOA
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                            
+                            SIKKIM
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                            
+                            KERALA
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#4a" data-toggle="tab" class="tm-tab-link active"><!-- Current Active Tab -->
+                           
+                            AGRA
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#5a" data-toggle="tab" class="tm-tab-link">
+                            
+                            UDAIPUR
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#6a" data-toggle="tab" class="tm-tab-link">
+                            
+                            MANALI
+                        </a>
+                    </li>
+                   
+					<li class="tm-tab-link-li">
+                        <a href="#7a" data-toggle="tab" class="tm-tab-link">
+                            
+                            PONDICHERRY
+                        </a>
+                    </li>
+					
+                </ul>
+                <div class="tab-content clearfix">
+                	
+                    <!-- Tab 1 -->
+                    <div class="tab-pane fade" id="1a">
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/patnem.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Patnem garden cottages</h3>
+                                    <p class="tm-text-highlight">North</p>
+                                    <p class="tm-text-gray">Featuring free WiFi, Patnem Garden Cottages offers accommodation in Patnem,100 metre from Patnem Beach and 7 km from Agonda beach. Guests can enjoy the on-site restaurant. Everything was so good. Clean big cottage, very helpful and smiling staff who has positive energy. Just</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\loggoa.html" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">2700/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/vivanta.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Vivanta Goa</h3>
+                                    <p class="tm-text-highlight">North</p>
+                                    <p class="tm-text-gray">Located in the City Centre, the modern Vivanta by Taj Panaji enjoys views of the Mandovi River and Altinho Hills. Providing a rooftop pool, it also has a 24-hour gym and pampering massage at Jiva Spa.... Best of the Best! Everything about this hotel was </p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="LoginRegistrationForm\loggoa.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">5800/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/blue corner.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Blue corner beach hut</h3>
+                                    <p class="tm-text-highlight">south</p>
+                                    <p class="tm-text-gray">Situated in Benaulim, 700 metres from Benaulim beach, Blue Corner Beach Huts & Restaurant features accommodation with a restaurant, free private parking, a bar and a shared lounge. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\loggoa.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">1870/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/sobit.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Sobit sarvor Portico</h3>
+                                    <p class="tm-text-highlight">North</p>
+                                    <p class="tm-text-gray">Sobit Sarovar Portico has a restaurant, outdoor swimming pool, a fitness centre and bar in Palolem. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\loggoa.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3590/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">back to top</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 2 -->
+                    <div class="tab-pane fade" id="2a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/s2.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Muscatel Bellevue</h3>
+                                    <p class="tm-text-highlight">South</p>
+                                    <p class="tm-text-gray">Muscatel Bellevue is set in Gangtok, within 2.7 km of Palzor Stadium and 2.9 km of Enchey Monastery. excellent view of the mountains, good location, taxi stand nearby , good food, </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logsik.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">1813/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/yang.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Hotel yangphel</h3>
+                                    <p class="tm-text-highlight">South</p>
+                                    <p class="tm-text-gray">Set in Gangtok, 2.8 km from Namgyal Institute of Tibetology, Hotel Yanggphell offers accommodation with a restaurant, free private parking, a bar and a garden. <p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logsik.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">1967/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/s3.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">bamboo retreat</h3>
+                                    <p class="tm-text-highlight">South</p>
+                                    <p class="tm-text-gray">Perched on a slope overlooking paddy fields, Bamboo Retreat offers rooms decorated according to Feng Shui themes. It offers wellness facilities like a private meditation room </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logsik.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">6000/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/s4.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Netuk House</h3>
+                                    <p class="tm-text-highlight">South</p>
+                                    <p class="tm-text-gray">Featuring free WiFi and a barbecue, Netuk House offers accommodation in Gangtok, 103 km from Darjeeling. Guests can enjoy the on-site bar. Free private parking is available on site. friendly staff, very comfortable rooms ,good access to the m</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logsik.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">4000/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">back to top</a>
+                    </div> <!-- tab-pane -->          
+                    
+                    <!-- Tab 3 -->     
+                    <div class="tab-pane fade" id="3a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/k1.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Kochi marriot</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Featuring an outdoor pool, a spa and wellness centre and 3 dining options, Kochi Marriott Hotel is located in Edapally, adjacent to Lulu Mall. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logker.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">5670/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/k2.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Burooj Hotel</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Located in Cochin, 6 km from Aster Medcity, Burooj Hotel provides accommodation with a restaurant, free private parking, a shared lounge and a garden. Value for money. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logker.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">2350/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/k3.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">dutch bungalow</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Situated within 1.4 km of Kochi Biennale and 15 km of Aster Medcity, Dutch Bungalow features rooms with air conditioning and a private bathroom in Cochin. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logker.html" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3467/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/k4.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">fort kochi</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Forte Kochi is a luxurious heritage hotel offering 5-star accommodation on Princess Street in Fort Kochi. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logker.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">5700/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">back to top</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade show active" id="4a">
+                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/a1.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">hotel alleviate</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Offering a restaurant that serves Indian, Chinese and continental delights, Hotel Alleviate is located within 1.5 km from the UNESCO World Heritage Site of the iconic Taj Mahal </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logagra.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">5647/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/a2.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">hotel tree homestays</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Featuring free WiFi, the Coral Tree Homestay offers accommodation in Agra. Taj Mahal is 700 metres from the property. </p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="LoginRegistrationForm\logagra.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">4500/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/a3.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">crystal sarovar agra</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Offering free WiFi, Crystal Sarovar Premiere Agra is situated in the Taj Ganj district in Agra 1.9 km from The Taj Mahal. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logagra.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">2340/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/a4.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">the oberoi amarvillas</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">just 600 metres from the Taj Mahal, The Oberoi Amarvilas Agra boasts luxurious 5-star accommodation with a flat-screen TV. This property houses 4 dining options and provides free parking.</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logagra.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">1345/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">back to top</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 5 -->
+                    <div class="tab-pane fade" id="5a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/u1.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">RAAS devigarh</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Housed in an 18th century palace in the village of Delwara, this heritage property features an outdoor pool, a spa and a business centre. Complimentary Wi-Fi access is provided.</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logudai.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3470/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/u2.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Maderi Havelli</h3>
+                                    <p class="tm-text-highlight">Second City</p>
+                                    <p class="tm-text-gray">Previously owned by the Maharaj of Madri and restored to its current state, Madri Haveli features elegant rooms with stained glass windows. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logudai.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">2560/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/u3.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">The leela palace</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Luxury awaits at The Leela Palace Udaipur with rooms that feature stunning views of the City Palace or Lake Pichola, situated within landscaped grounds.</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logudai.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">4563/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/u4.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">trident udaipur</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Surrounded by landscaped gardens, Trident Udaipur is located on the banks of the Pichola Lake and spread over 43 acres. It houses 3 dining options and an outdoor pool. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logudai.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">6754/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">back to top</a>
+                    </div> <!-- tab-pane -->   
+                    
+                    <!-- Tab 6 -->            
+                    <div class="tab-pane fade" id="6a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/m1.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">the whispering inn</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Situated in Manāli, 3 km from Hidimba Devi Temple, The Whispering Inn By Vivaan features accommodation with a restaurant, free private parking, a bar and a garden</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logman.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3500/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/m2.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">hotel hadimba way</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Situated in Manāli, less than 1 km from Hidimba Devi Temple, Hotel Hadimba Way features accommodation with a restaurant, free private parking and a garden. </p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logman.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3450/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/m3.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">highQ manali</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Set in Manāli, 6 km from Hidimba Devi Temple, HighQ Manali offers accommodation with a restaurant, free private parking, a shared lounge and a garden.</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logman.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3440/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/m4.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">peak and snow cottage</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Situated 5 km from Hidimba Devi Temple in Manāli, Peak And Snow Cottage features a restaurant and free WiFi throughout the property.</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logman.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3130/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">back to top</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 7 -->
+                    <div class="tab-pane fade" id="7a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/p1.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Hotel De Petit</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Located in Pondicherry, 1.3 km from Sri Aurobindo Ashram, Hotel De Petit provides accommodation with a restaurant, free private parking, an outdoor swimming pool and a bar.</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logpondi.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3770/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/p2.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">La Villa</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Located in Pondicherry, 1.3 km from Sri Aurobindo Ashram, Hotel De Petit provides accommodation with a restaurant, free private parking, an outdoor swimming pool and a bar.</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logpondi.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">4230/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/p3.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">La Maison Charu</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Set in Pondicherry, 500 metres from Sri Aurobindo Ashram, La Maison Charu offers accommodation with free WiFi and free private parking. Superior location, beautiful room, friendly staff.</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logpondi.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">5140/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/p4.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Villa Ecotiva</h3>
+                                    <p class="tm-text-highlight"></p>
+                                    <p class="tm-text-gray">Set in Pondicherry, 500 metres from Sri Aurobindo Ashram, La Maison Charu offers accommodation with free WiFi and free private parking. Superior location, beautiful room, friendly staff.</p>   
+                                </div>
+                                <a href="LoginRegistrationForm\logpondi.html"  class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3190/-</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Back to top</a>
+                    </div> <!-- tab-pane -->
+                </div>
+            </div>
+
+            <div class="tm-container-outer tm-position-relative" id="tm-section-4">
+                <div id="google-map"></div>
+                <form action="index.html" method="post" class="tm-contact-form">
+                    <div class="form-group tm-name-container">
+                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                    </div>
+                    <div class="form-group tm-email-container">
+                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send Message Now</button>
+                </form>
+            </div> <!-- .tm-container-outer -->
+
+            <footer class="tm-container-outer">
+                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Your Company 
+                    
+                . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Mo</a></p>
+            </footer>
+        </div>
+    </div> <!-- .main-content -->
+
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+    <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script> 
+    
+        
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            // Change top navbar on scroll
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 100) {
+                    $(".tm-top-bar").addClass("active");
+                } else {                    
+                 $(".tm-top-bar").removeClass("active");
+                }
+            });
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function(){
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass:'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function(){
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+            loadGoogleMap();                                       // Google Map                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+</body>
+</html>
